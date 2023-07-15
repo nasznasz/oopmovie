@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Operations</title>
+  <link rel="stylesheet"  href="Crud.css">
+</head>
+<body>
+    <video id="video-background" src="6.mp4" autoplay loop muted></video>
+    <nav>
+        <label class="logo">Nasz Movie 🎬</label>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="second.html">Movie List</a></li>
+            <li><a href="Crud.html">Crud watchlist</a></li>
+            <li><a href="watchlist.html">Watchlist</a></li>
+        </ul>
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav> 
+  <div class="container">
+    <h1>Movie File Operations</h1>
+    <div class="form-group">
+      <label for="fileName">File Name:</label>
+      <input type="text" id="fileName">
+    </div>
+    <div class="form-group">
+      <label for="fileContents">File Contents:</label>
+      <textarea id="fileContents" rows="10" cols="50"></textarea>
+    </div>
+    <div class="button-group">
+      <button id="btnCreate">Create</button>
+      <button id="btnRead">Read</button>
+      <button id="btnUpdate">Update</button>
+      <button id="btnDelete">Delete</button>
+    </div>
+  </div>
+  
+  <script src="Crud.js"></script>
+</body>
+</html>

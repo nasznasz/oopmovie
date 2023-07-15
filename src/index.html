@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <video autoplay muted loop id="background-video">
+    <source src="5.mp4" type="video/mp4">
+  </video>
+
+  <nav>
+    <label class="logo">Nasz Movie 🎬</label>
+    <ul>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="second.html">Movie List</a></li>
+      <li><a href="Crud.html">Crud watchlist</a></li>
+      <li><a href="watchlist.html">Watchlist</a></li> 
+    </ul>
+    <label id="icon">
+      <i class="fas fa-bars"></i>
+    </label>
+  </nav>
+
+  <h1>Movie Search</h1>
+
+  <div class="search-bar">
+    <input type="text" id="searchData" placeholder="Enter movie title">
+    <button onclick="buttonClicked()">Search</button>
+  </div>
+
+  <div id="demo" class="movie-container"></div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

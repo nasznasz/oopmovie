@@ -1,0 +1,167 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  color: #fca311;
+}
+nav {
+  height: 80px;
+  width: 100%;
+  background: #211515;
+}
+
+label.logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  padding: 0 20px;
+  line-height: 80px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 40px;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 8px;
+  line-height: 80px;
+}
+
+nav a {
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  padding: 7px 10px;
+  border-radius: 3px;
+}
+
+a.active,
+a:hover {
+  border: 1px solid white;
+  transition: .5s;
+}
+
+a {
+  color: #fca311;
+  text-decoration: none;
+}
+
+/* Wrapper styles */
+.wrapper {
+  padding: 20px;
+}
+
+/* Container styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.movie-details {
+  background-color: #292929;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.movie-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.movie-poster {
+  width: 150px; /* Adjust the width as needed */
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.movie-year,
+.movie-genre,
+.movie-plot,
+.movie-director,
+.movie-actors {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Related movies styles */
+.related-movies {
+  margin-bottom: 30px;
+}
+
+.related-movies h2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.related-movies-box {
+  background-color: #585757; /* Grey background color */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 90%;
+}
+
+.related-movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.related-movie-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #292929;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: calc(25% - 20px);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  flex-basis: 25%;
+}
+
+.related-movie-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.related-movie-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.related-movie-poster {
+  height: 150px; /* Adjust the height as needed */
+  width: auto;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
